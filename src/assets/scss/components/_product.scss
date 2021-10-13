@@ -1,0 +1,90 @@
+section.product {
+    height:100vh;
+    .wrap-product {
+        padding:50px;
+        .product-row-top {
+            background:$green;
+            .product-details {
+                padding:5rem 2rem;
+                h2 {
+                    font-size: 3rem;
+                    color: $green;
+                }
+                p {
+                    color: $darkGrey;
+                    width:75%;
+                }
+                span {
+                    position:relative;
+                    display: inline-block;
+                    width: 100%;
+                    &:after {
+                        content: '';
+                        width: 70%;
+                        border-bottom: solid 1px $green;
+                        position: absolute;
+                        left: 150px;
+                        top: 50%;
+                        z-index: 1;
+                    }
+                }
+            }
+            .button-block {
+                padding:2rem 4rem;
+                text-align:center;
+                color: $green;
+                &.product-buy {
+                    background: $white;
+                }
+                .product-price {
+                    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 800;
+                    padding-bottom: 0.5rem;
+                    span {
+                        font-size: 75%;
+                        vertical-align: super;
+                        padding-right: 0.2rem;
+                        font-weight: 400 !important;
+                    }
+                }
+            }
+        }
+        .product-row-bottom {
+            background: #F7F7F7;
+            .product-options {
+                padding:1rem 2rem;
+                .product-option-item {
+                    text-align: center;
+                    img {
+                        mix-blend-mode: darken;
+                        max-width:250px;
+                    }
+                }
+            }
+        }
+        .button-block {
+            padding:2rem 4rem;
+            text-align:center;
+            color: $green;
+            &.product-subscription {
+                background:#ECEFF0;
+            }
+            .product-price {
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                font-size: 1.6rem;
+                font-weight: 800;
+                padding-bottom: 0.5rem;
+                span {
+                    font-size: 75%;
+                    vertical-align: super;
+                    padding-right: 0.2rem;
+                    font-weight: 400 !important;
+                }
+            }
+        }
+    }
+}
+
+
+

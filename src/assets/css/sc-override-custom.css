@@ -1,0 +1,270 @@
+
+
+.snip-layout .snip-btn, .snip-layout .snip-header, .snip-layout .snip-layout__loading, .snip-layout .snip-table__loading {
+    font-weight: 400;
+    text-transform:capitalize;
+}
+
+
+.snip-layout {
+    font-size: 16px;
+    padding:0;
+}
+
+.snip-layout {
+    background: rgba(123,123,123,.75);
+    bottom: 0;
+    color: #999;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    left: 0;
+    line-height: normal;
+    overflow-x: auto;
+    padding: 0;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: 1040;
+    overflow: hidden !important;
+    transition: all 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0s;
+    transform-origin: center center 0px;
+    -webkit-transform-origin: center center 0px;
+    -webkit-transition: all 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0s;
+    transition: all 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0s;
+}
+
+.snip-layout.snip-active {
+    right: 0;
+    overflow: hidden;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.snip-layout .snip-layout__main-container {
+    background: white;
+    margin: 0;
+    margin-left:auto;
+    margin-right:0;
+    height: 100vh;
+    width:50%;
+    position: relative;
+    padding: 30px;
+}
+
+@media only screen and (max-width:768px) {
+    .snip-layout {
+        background: rgba(123,123,123,.75);
+        bottom: 0;
+        color: #999;
+        font-family: Arial,sans-serif;
+        font-size: 14px;
+        left: 0;
+        line-height: normal;
+        overflow-x: auto;
+        padding: 0;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        z-index: 1040;
+        overflow: hidden !important;
+        transition: all 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0s;
+        transform-origin: center center 0px;
+        -webkit-transform-origin: center center 0px;
+        -webkit-transition: all 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0s;
+        transition: all 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0s;
+    }
+
+    .snip-layout .snip-layout__main-container {
+        background: white;
+        margin: 0;
+        margin-left:auto;
+        margin-right:0;
+        height: 100vh;
+        width:100%;
+        position: relative;
+        padding: 30px;
+    }
+
+    
+    }
+
+.snip-layout #snipcart-main-content {
+    background:white;
+}
+
+.snip-layout .snip-header {
+    background: transparent;
+    color: #1b1b1b;
+    
+    position: relative;
+    text-align: left;
+}
+
+
+.snip-layout .snip-header__title {
+    display: block;
+    font-size: 18px;
+    left: 1.25em;
+    line-height: 105px;
+    position: absolute;
+    text-align: left;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.snip-layout .snip-header__total {
+    position:relative;
+    background:transparent;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 2.188em;
+    padding: 0 ;
+    margin: 0;
+    float: right;
+}
+
+.snip-layout .snip-header__total-label {
+    font-size: 12px;
+}
+
+.snip-layout .snip-header__total #snipcart-amount {
+    font-family: "Playfair Display", sans-serif;
+    font-size:30px;
+    text-transform: lowercase;
+}
+
+.snip-layout .snip-layout__close {
+    color: #fff;
+    font-size: 1.8em;
+    padding: 0;
+    margin:0;
+    top:0;
+    right:0;
+    position: relative;
+    text-align: right;
+    z-index: 2;
+    width:100%;
+}
+
+
+.snip-layout .snip-layout__close .snip-ico {
+    font-size: 0;
+    text-align: right;
+}
+
+
+.snip-layout .snip-layout__close .snip-ico::before {
+    content: "Close";
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    speak-as: none;
+    text-transform: none;
+    color:#1b1b1b;
+    font-size: 20px;
+    text-align: right;
+    margin-right:0;
+    margin-left: auto;
+}
+
+
+.snip-layout .snip-product__remove .snip-ico .snip-ico--close {
+    -webkit-font-smoothing: antialiased;
+    font-family: Snipcart;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    speak-as: none;
+    text-transform: none;
+    font-size:20px;
+}
+
+
+.snip-layout .snip-table {
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+}
+
+.snip-layout .snip-table__header {
+    font-size: 12px;
+    padding: 1em 2em;
+    text-transform: capitalize;
+}
+
+.snip-layout .snip-table__body {
+    border-top: 1px solid #eee;
+    display: table-row-group;
+    padding: 0;
+}
+
+.snip-layout .snip-product__thumbnail {
+    float: left;
+    height: auto;
+    width: 150px;
+    margin-right: .714em;
+}
+
+.snip-layout .snip-customfields {
+    display:none;
+}
+
+.snip-layout .snip-table__cell--center .snip-table__small-col {
+    background:green;
+    width:100%;
+}
+
+.snip-layout .snip-footer {
+    position:absolute;
+    left:0;
+    bottom: 0;
+    width:100%;
+    background: #f2f2f2;
+    padding: .125em .625em;
+    text-transform: capitalize !important;
+}
+
+
+
+
+
+
+ .snip-layout .snip-product__name {
+    font-size: 14px;
+    margin-top: .5em;
+    height:20px;
+}
+
+
+.snip-layout table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  tbody th:nth-child(1) {
+    width: 30%;
+    background:red;
+  }
+  
+  tbody th:nth-child(2) {
+    width: 20%;
+    background:yellow;
+  }
+  
+  tbody th:nth-child(3) {
+    width: 15%;
+    background:green;
+  }
+  
+  tbody th:nth-child(4) {
+    width: 35%;
+    background:bæue;
+  }
+  
+  th, td {
+    padding: 20px;
+  }

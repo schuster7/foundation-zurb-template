@@ -1,0 +1,151 @@
+.product-card {
+	position: relative;
+	background: $white;
+	max-width:500px;
+	margin: 0 auto;
+	box-shadow: 1px 3px 4px rgba(136, 142, 160, 0.2);
+	-webkit-box-shadow: 1px 3px 4px rgba(136, 142, 160, 0.2);
+	-moz-box-shadow: 1px 3px 4px rgba(136, 142, 160, 0.2);
+	-webkit-transition: all 0.2s, -webkit-transform 0.2s;
+	transition: all 0.2s, transform 0.2s;
+	&.no-max-width {
+		max-width: 100%;
+	}
+	.card-img {
+		position: relative;
+		transition: all 500ms ease;
+		-webkit-transition: all 500ms ease;
+		&.img-padding {
+			padding:2rem;
+		}
+		svg {
+			max-height: 235px;
+			width: 100%;
+			transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+		}
+		.img-icon {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding:1rem;
+			i {
+				color: rgb(207, 51, 64);
+				font-size: 2.5rem;
+				line-height:1;
+			}
+		}
+		.img-banner {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 1rem;
+			padding: 0.25rem 1rem;
+			background: $white;
+			p {
+				color: $gold;
+				font-size: 1.2rem;
+				margin: 0;
+				font-weight: 600;
+			}
+		}
+		
+
+	}
+	.card-img.color_1 {
+		background: #e3f0ff;
+		svg {
+			fill: #ccb4db;
+			g#secondary {
+				fill: #e3f0ff;
+			}
+		}
+	}
+	.card-img.color_2 {
+		background: #f4955c;
+
+		svg {
+			fill: #313131;
+			g#secondary {
+				fill: #f4955c;
+			}
+		}
+	}
+	.card-img.color_3 {
+		background: #80b59a;
+		svg {
+			fill: #f3efa1;
+			g#secondary {
+				fill: #80b59a;
+				opacity: 0;
+				transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			}
+			g#text-secondary {
+				opacity:1;
+				transition: all 300ms ease;
+			-webkit-transition: all 300ms ease;
+			}
+		}
+	}
+	&:hover {
+		-webkit-box-shadow: 8px 12px 28px 0 rgba(136, 142, 160, 0.4);
+    box-shadow: 8px 12px 28px 0 rgba(136, 142, 160, 0.4);
+    -moz-box-shadow: 8px 12px 28px 0 rgba(136, 142, 160, 0.4);
+		.card-img.color_1 {
+			background: #ccb4db;
+			svg {
+				fill: #e3f0ff;
+				g#secondary {
+					fill: #e3f0ff;
+				}
+			}
+		}
+		.card-img.color_2 {
+			background: #313131;
+			svg {
+				fill: #f4955c;
+				g#secondary {
+					fill: #f4955c;
+				}
+			}
+		}
+		.card-img.color_3 {
+			background: #f3efa1;
+			svg {
+				fill: #80b59a;
+
+				g#secondary {
+					fill: #80b59a;
+					opacity: 1;
+				}
+				g#text-secondary {
+					fill: #80b59a;
+					opacity: 0;
+				}
+			}
+		}
+	}
+	.card-info {
+		padding:1rem 1rem 0 1rem;
+		.card-details {
+			h3 {
+				color: $green;
+				margin-bottom: 1rem;
+			}
+		}
+		.card-price {
+			h3 {
+				font-size:1.6rem;
+				font-style: italic;
+				margin: 2rem 0 0 0;
+			
+				span {
+					font-size: 0.5em;
+					vertical-align: super;
+					margin: 0 0.3em;
+				}
+			}	
+		}
+	}
+}

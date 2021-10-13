@@ -1,0 +1,28 @@
+<nav role='navigation'>
+    <div class="toggle">
+      <span class="container">
+        <span class="entypo-menu"></span>
+      </span>
+    </div>
+    <div class="flyout-nav">
+      <ul class="flyout-items">
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div>
+    <div class="close">
+      <span class="entypo-cancel"></span>
+    </div>
+  </nav>  
+  
+  <script>
+      $(".toggle").click(function(){
+  $(".flyout-nav").addClass("open");
+  $(".close").addClass("shut");
+});
+
+$(".close").click(function(){
+  $(this).removeClass("shut");
+  $(".flyout-nav").removeClass("open");
+});
+  </script>

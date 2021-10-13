@@ -15,3 +15,8 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+
+// Custom JS
+import '../js/header';
+import '../js/main';

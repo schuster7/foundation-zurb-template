@@ -1,0 +1,83 @@
+
+nav {
+  display: block;
+  position: fixed;
+  top:200px;
+  right: 2em;
+}
+nav .toggle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  float: right;
+  font-size: 2em;
+  background-color: #3399CC;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close {
+  display: block;
+  float: right;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #E64136;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5em;
+  display: none;
+}
+
+.flyout-nav {
+  float: right;
+
+  overflow: hidden;
+  position: relative;
+  width: 0;
+
+  -moz-transition: width, 0.5s;
+  -o-transition: width, 0.5s;
+  -webkit-transition: width, 0.5s;
+  transition: width, 0.5s;
+}
+.flyout-items {
+  list-style: none;
+  height: 60px;
+  margin:0;
+}
+.flyout-items  li {
+  display: inline-block;
+  margin:0 15px;
+}
+.flyout-items li a {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  line-height:60px;
+  padding: 0;
+  margin:0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-align:center;
+  background-color: #f4f4f4;
+}
+.flyout-items li a:hover {
+  cursor: pointer;
+  background-color: #d6ebf5;
+}
+
+/*  Open Menu  */
+.open {
+  width: 190px;
+  -moz-transition: width, 0.5s;
+  -o-transition: width, 0.5s;
+  -webkit-transition: width, 0.5s;
+  transition: width, 0.5s;
+}
+
+.shut {
+  display: block;
+}

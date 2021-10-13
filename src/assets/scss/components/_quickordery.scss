@@ -1,0 +1,152 @@
+.product-card-large {
+    position: relative;
+    background: $white;
+    box-shadow: 1px 3px 4px rgba(136, 142, 160, 0.2);
+    -webkit-box-shadow: 1px 3px 4px rgba(136, 142, 160, 0.2);
+    -moz-box-shadow: 1px 3px 4px rgba(136, 142, 160, 0.2);
+    -webkit-transition: all 0.2s, -webkit-transform 0.2s;
+    transition: all 0.2s, transform 0.2s;
+    &.card-max-width {
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    .product-card-quick {
+        position: relative;
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .cell-height {
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            height: 100%;
+            background-color: $solitude;
+            background-image: url('../img/wheat3.svg');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+
+            @include breakpoint(medium down) {
+                background-image: none;
+                background-color: $white;
+            }
+
+            p {
+                font-size: 0.8rem;
+                color: $white;
+                text-align: center;
+                margin: 0;
+
+                @include breakpoint(medium down) {
+                    color: $gold;
+                    padding: 0 0.25rem;
+                }
+            }
+
+            .cell-first {
+                background: $green;
+                margin-bottom: auto;
+                padding: 1rem 0.15rem;
+
+                @include breakpoint(medium down) {
+                    background: transparent;
+                    margin: 0;
+
+                    p {
+                        text-align: left;
+                        white-space: nowrap;
+
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+
+                @include breakpoint(small down) {
+                    background: transparent;
+                    margin: 0;
+                    padding: 0 0 0.15rem 0;
+
+                    p {
+                        text-align: center;
+
+                        span {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+
+            .item-title {
+                h1 {
+                    text-align: center;
+                    margin: 0;
+                    margin: 0 auto;
+                    font-size: 5vh;
+                    writing-mode: vertical-rl;
+                    text-orientation: mixed;
+
+                    @include breakpoint(medium down) {
+                        writing-mode: horizontal-tb;
+                        font-size: 2rem;
+                        margin: 1rem 1rem;
+                        line-height: 1;
+                    }
+
+                    @include breakpoint(small down) {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .cell-last {
+                background: $gold;
+                margin-top: auto;
+                padding: 1rem 0.15rem;
+
+                @include breakpoint(medium down) {
+                    background: transparent;
+                    margin: 0;
+
+                    p {
+                        text-align: right;
+
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+
+                @include breakpoint(small down) {
+                    background: transparent;
+                    margin: 0;
+                    padding: 0.15rem 0 1rem 0;
+
+                    p {
+                        text-align: center;
+
+                        span {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+    .product-holder {
+        padding: 1rem;
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+    }
+
+}

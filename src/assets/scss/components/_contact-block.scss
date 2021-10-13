@@ -1,0 +1,52 @@
+.contact-block {
+    padding: 0 0 10% 0;
+    .text-lead {
+        color: $green;
+        font-size: 0.8rem;
+    }
+    i {
+        font-size: 30px;
+        font-style: normal;
+    }
+    h2, h4 {
+        margin:0;
+        a {
+            color: $green;
+            position: relative;
+            text-decoration: none;
+            -webkit-transition: all 300ms ease;
+			transition: all 300ms ease;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 1px;
+                right: 1px;
+                height: 2px;
+                background-color: $black;
+                transform: scaleX(0);
+                transform-origin: right center;
+                -webkit-transition: transform 500ms ease;
+                transition: transform 500ms ease;
+            }
+            &:hover {
+                color: $black;
+
+                &:after {
+                    transform: scaleX(1);
+                    transform-origin: left center;
+                }
+            }
+        }
+    }
+    .middle-hr {
+        background: $green;
+        height: 2px;
+        width: 30px;
+        margin:20px auto;
+        padding: 0 !important;
+        @include breakpoint(small down) {
+            margin:10px auto;
+        }
+    }
+}   

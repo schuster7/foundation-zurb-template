@@ -1,0 +1,23 @@
+span.snipcart-total-items {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: #e8eef1;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    &:hover {
+        background: $black;
+        color: $white !important;
+    }
+}
+
+
+span.snipcart-total-price {
+    color: $green;
+}

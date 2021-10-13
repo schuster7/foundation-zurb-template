@@ -1,0 +1,36 @@
+<div class="main">
+
+    <div class="grid-container">
+        <div class="link-line">
+            <a href="/products">Testing</a>
+        </div>
+    </div>
+
+</div>
+
+
+<style>
+    .link-line a {
+        position: relative;
+        color: red;
+    }
+
+    .link-line a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 1px;
+        right: 1px;
+        height: 2px;
+        background-color: black;
+        
+        transform: scaleX(0);
+        transform-origin: right center;
+        transition: transform cubic-bezier(0.62, 0.05, 0.01, 0.98) 0.7s;
+    }
+
+    .link-line a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left center;
+    }
+</style>

@@ -1,0 +1,102 @@
+.padding-intro-text {
+    background: #f5f5f5;
+    padding-top: 100px;
+    .wrap-intro-text {
+        position: relative;
+        text-align: center;
+        padding: 10% 0;
+        .bg-text {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            margin: 0 auto;
+            width: 100%;
+            h1 {
+                position: relative;
+                top: -15px;
+                left: -3%;
+                font-size: 18vw;
+                color: rgba(51, 51, 51, 0.07);
+                font-family: "Oswald", sans-serif;
+                font-weight: 700;
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                span {
+                    display: inline-block;
+                }
+                @include breakpoint(small down) {
+                    top: -15px;
+                    left: -3%;
+                    font-size: 21vw;
+                } 
+            }
+        }
+    }
+    .wrap-inner-text { 
+        position: relative;
+        top: -50px;
+        @include breakpoint(small down) {
+            top: -40px;
+        }
+        .intro-emblem {
+            position:relative;
+            top: -60px;
+            @include breakpoint(large down) {
+                top: -40px;
+            } 
+            @include breakpoint(medium down) {
+                top: -40px;
+            } 
+            @include breakpoint(small down) {
+                top: -20px;
+            } 
+            @include breakpoint(120rem) {
+                top: -100px;
+            } 
+            @include breakpoint(145rem) {
+                top: -150px;
+            } 
+            img {
+                width: 90px;
+                @include breakpoint(small down) {
+                    width: 60px;
+                }
+                @include breakpoint(145rem) {
+                    width: 120px;
+                }  
+            }
+        }
+        .inner-text {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            h3 {
+                font-size: 2vw;
+                margin: 0;
+                @include breakpoint(medium down) {
+                    font-size: 1.2rem;
+                }
+                @include breakpoint(small down) {
+                    font-size: 0.9rem;
+                }  
+            }
+            h3.inner-text-top {
+                padding-bottom: 0.5rem;
+                @include breakpoint(small) {
+                    padding-bottom: 0.25rem;
+                }  
+            }
+            h3.inner-text-bottom {
+                padding-top: 0.5rem;
+                @include breakpoint(small) {
+                    padding-top: 0.25rem;
+                }  
+            }
+        }
+    }    
+}

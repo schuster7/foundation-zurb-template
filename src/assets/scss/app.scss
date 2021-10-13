@@ -15,9 +15,9 @@
 // @include foundation-flex-grid;
 
 // Generic components
-@include foundation-button;
-@include foundation-button-group;
-@include foundation-close-button;
+// @include foundation-button;
+// @include foundation-button-group;
+// @include foundation-close-button;
 @include foundation-label;
 @include foundation-progress-bar;
 @include foundation-slider;
@@ -62,3 +62,24 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// Custom
+@import "./variables";
+
+// Components
+
+@import "./components/navigation.scss";
+@import "./components/mobile-nav";
+@import "./components/footer";
+@import "./components/contact-block";
+@import "./components/intro-text";
+@import "./components/buttons";
+@import "./components/quantity-buttons";
+@import "./components/product-card";
+@import "./components/product";
+@import "./components/category-links";
+@import "./components/shop-item";
+@import "./components/product-table";
+@import "./components/quickordery";
+@import "./components/donuts";
+@import "./components/button-round";

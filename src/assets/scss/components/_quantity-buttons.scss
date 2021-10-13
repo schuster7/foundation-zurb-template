@@ -1,0 +1,46 @@
+.quantity-buttons {
+    display: flex;
+    .input-group {
+        justify-content: center;
+        align-items: stretch;
+        .input-group-field {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+            &::-webkit-inner-spin-button,
+            ::-webkit-outer-spin-button {
+                appearance: none;
+            }
+        }
+        .input-group-button {
+            .input-button, .hollow, .circle {
+                border-radius: 50%;
+                width: 30px !important;
+                height: 30px !important;
+                padding: 0.25rem;
+                background: $green;
+                color: $white;
+            }
+        }
+    }
+    input[type='number'] {
+        display: block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        max-width: 30px;
+        height:auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-family: inherit;
+        font-size: 0.95rem;
+        font-weight: 600;
+        line-height: 2;
+        color: $darkGrey;
+    }
+}

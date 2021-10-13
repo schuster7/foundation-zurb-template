@@ -1,0 +1,125 @@
+.footer {
+    background: #fafafa;
+    .footer-middle {
+        h5 {
+            margin: 0;
+            color: $green;
+            @include breakpoint(medium down) {
+                font-size: 1.1rem;
+            }
+            @include breakpoint(small down) {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+        }
+        .wrap-icons { 
+            .flex-list-icons {
+                list-style: none;
+                float:right;
+                width:100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .flex-list-icons > div {
+                display: inline-block;
+                text-align: center;
+            }
+            .flex-list-icons > div i {
+                font-size: 1.4rem;
+                text-align:center;
+                @include breakpoint(small down) {
+                    font-size: 1.2rem;
+                }
+            }
+            .flex-list-icons > div p {
+                font-size: 0.6rem;
+                color: $green;
+                font-style: italic;
+                @include breakpoint(small down) {
+                    font-size: 0.5rem;
+                }
+            }
+        }    
+    }
+    .footer-bottom {
+        padding: 2rem 0;
+        border-top: 1px solid $green;
+        .flex-list-links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            div {
+                margin-right:20px;
+            }
+            p {
+                margin: 0;
+            }
+            a {
+                position: relative;
+                text-decoration: none;
+                color: $green;
+                font-size: 0.75em;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 1px;
+                    right: 1px;
+                    height: 2px;
+                    background-color: $black;
+                    transform: scaleX(0);
+                    transform-origin: right center;
+                    -webkit-transition: transform 500ms ease;
+                    transition: transform 500ms ease;
+                }
+
+                &:hover {
+                    color: $black;
+                    &:after {
+                        transform: scaleX(1);
+                        transform-origin: left center;
+                    }
+                }
+
+                @include breakpoint(small down) {
+                    font-size: 0.8rem;
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+            @include breakpoint(small down) {
+                font-size: 0.5rem;
+                padding-top:2rem;
+            }
+        }
+        .footer-text {
+            text-align: right;
+            p {
+                font-size: 0.7rem;
+                margin-bottom: 0;
+                margin-left: auto;
+                max-width: 80%;
+                padding-right: 1rem;
+                span {
+                    font-size:0.85rem;
+                    font-weight: 600;
+                    color: $green;
+                }
+                @include breakpoint(medium down) {
+                    font-size: 0.6rem;
+                    max-width:100%;
+                }
+                @include breakpoint(small down) {
+                    text-align: left;
+                }
+            }
+        }
+        img {
+            width: 50px;
+        }
+    }
+}
+
